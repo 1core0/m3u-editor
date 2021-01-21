@@ -15,7 +15,6 @@ def processFile():
             for line in listFile:
                 counter += 1
                 if "group-title" in line:
-                    # split list by space
                     resultList = re.findall(r'"([^"]*)"', line)
                     languageTitle = resultList[3]
                     if languageTitle not in uniqueGroupList:
